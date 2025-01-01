@@ -9,7 +9,7 @@ const Navbar = () => {
 
         <div className="flex flex-1 justify-center max-sm:hidden">
           {navLists.map((nav) => (
-            <div key={nav} className="px-5 ">{nav}</div>
+            <div key={nav} className="px-5">{nav}</div>
           ))}
         </div>
 
