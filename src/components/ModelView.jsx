@@ -5,12 +5,12 @@ import { Suspense } from "react"
 import Iphone from './Iphone'
 import * as THREE from 'three'
 
-const ModelView = ({index, groupRef,gsapType,controlRef,setRotationSize,size,item}) => {
+const ModelView = ({index, groupRef,gsapType,controlRef,setRotationState,size,item}) => {
   return(
     <View 
     indeex={index}
     id={gsapType}
-    className={` w-full h-full ${index === 2} ? 'righrt-[-100%] : '' `}
+    className={` w-full h-full absolute ${index === 2 ? 'right-[-100%]' : ''} `}
     >
       // Ambient Light 
       <ambientLight intensity={0.3}/>
